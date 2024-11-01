@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f7ce;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Display Screen */
+.display {
+    background-color: #2d0000;
+    color: rgb(255, 254, 254);
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    min-height: 70px;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:active {
+    background-color: #d4d4d4;
+}
+
+/* Operators and Equal Button */
+.operator {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.operator:active {
+    background-color: #ec971f;
+}
+
+.equal {
+    grid-column: span 4;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.equal:active {
+    background-color: #4cae4c;
+}
